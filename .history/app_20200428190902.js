@@ -45,28 +45,28 @@ fetch(API_URL_Hrs)
               <tr>
             
                 <th scope="col">
-                ${h0} hrs<br><img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[0].main.temp - 273.15).toFixed(2)}°C
+                ${h0} "hrs"<br><img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
+                <br> ${(hour[0].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h1} hrs<br>
+
                 <img src="http://openweathermap.org/img/wn/${hour[1].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[1].main.temp - 273.15).toFixed(2)}°C
+                <br>18 hrs: ${(hour[1].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h2} hrs<br>
+
                 <img src="http://openweathermap.org/img/wn/${hour[2].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[2].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[2].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h3} hrs<br>
+
                 <img src="http://openweathermap.org/img/wn/${hour[3].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[3].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[3].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h4} hrs<br>
+
                 <img src="http://openweathermap.org/img/wn/${hour[4].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[4].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[4].main.temp - 273.15).toFixed(2)}°C
                 </th>
           </tr>
           </thead>

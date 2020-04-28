@@ -31,42 +31,37 @@ fetch(API_URL_Hrs)
     .then(response => response.json())
     .then(data => {
         let hour = data.list;
-        let h0 = new Date(hour[0].dt_txt).getHours();
-        let h1 = new Date(hour[1].dt_txt).getHours();
-        let h2 = new Date(hour[2].dt_txt).getHours();
-        let h3 = new Date(hour[3].dt_txt).getHours();
-        let h4 = new Date(hour[4].dt_txt).getHours();
-        
+        let h1 = new Date();//hour[0].dt_txt;
+        h1 = h1.getHours();
         console.log(h1);
-     
+        // var h2 = hour[1].dt_txt.getHours();
+        // var h3 = hour[2].dt_txt.getHours();
+        // var h4 = hour[3].dt_txt.getHours();
+        // var h5 = hour[4].dt_txt.getHours();
         hours.innerHTML += `
         <table class="table table-hover">
             <thead>
               <tr>
             
                 <th scope="col">
-                ${h0} hrs<br><img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[0].main.temp - 273.15).toFixed(2)}°C
+                <img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
+                <br>15 hrs: ${(hour[0].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h1} hrs<br>
                 <img src="http://openweathermap.org/img/wn/${hour[1].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[1].main.temp - 273.15).toFixed(2)}°C
+                <br>18 hrs: ${(hour[1].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h2} hrs<br>
                 <img src="http://openweathermap.org/img/wn/${hour[2].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[2].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[2].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h3} hrs<br>
                 <img src="http://openweathermap.org/img/wn/${hour[3].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[3].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[3].main.temp - 273.15).toFixed(2)}°C
                 </th>
                 <th scope="col">
-                ${h4} hrs<br>
                 <img src="http://openweathermap.org/img/wn/${hour[4].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[4].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[4].main.temp - 273.15).toFixed(2)}°C
                 </th>
           </tr>
           </thead>

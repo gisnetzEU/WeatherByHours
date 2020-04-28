@@ -66,7 +66,7 @@ fetch(API_URL_Hrs)
                 <th scope="col">
                 ${h4} hrs<br>
                 <img src="http://openweathermap.org/img/wn/${hour[4].weather[0].icon}@2x.png" alt="">
-                <br>${(hour[4].main.temp - 273.15).toFixed(2)}°C
+                <br>21 hrs: ${(hour[4].main.temp - 273.15).toFixed(2)}°C
                 </th>
           </tr>
           </thead>

@@ -1,0 +1,36 @@
+/* City name: jsonResponse.name
+Describe of weather: jsonResponse.weather[0].main + description
+Weather Icon = `http://openweathermap.org/img/wn/${jsonResponse.weather[0].icon}@2x.png`
+Pressure = jsonResponse.main.pressure
+Humidity= jsonResponse.main.humidity
+Wind Speed = jsonResponse.wind.speed
+
+
+
+WeatherByHours: https://api.openweathermap.org/data/2.5/forecast?q=Brussels&appid=f6211bc24c258c57f7a7fba887afdd17
+
+
+
+let responseofWeatherHours =  data.list
+
+
+
+9clock =  data.list[0]
+12clcok = data.list[1]
+15 = data.list[2] */
+
+
+//let responseofWeatherHours = JSON.parse(response);
+        // responseofWeatherHours.forEach(function (hour) {
+        //     hours.innerHTML += `
+        //     <br>${hour.dt_txt}: ${(hour.main.temp - 273.15).toFixed(2)}°C
+                
+        //     `      
+        // })
+
+        // hours.innerHTML = `
+            //     ${data.list[0].dt_txt}
+            //     ${data.list[0].main.temp}
+
+            // ` 
+            //console.log(responseofWeatherHours[0].dt_txt)
