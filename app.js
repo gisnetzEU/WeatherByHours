@@ -9,21 +9,35 @@ fetch(API_URL)
     .then(data => {
         d = new Date();
         output.innerHTML = `
-            <div class="card">                    
-                    <div class="card-body">
-                        <img class="card-img-top" src="holder.js/100x180/" alt="">
-                        <h4 class="card-title">${data.name}</h4>
-                        <p class="card-text">${data.weather[0].main}: ${data.weather[0].description}</p>
-                        <h5>${d}</h5>
-                        ${(data.main.temp - 273.15).toFixed(2)}°C
-                        <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" id="productImg"  class="img-responsive" alt="" srcset="">
-                        <p class="card-text">Pressure: ${data.main.pressure} hPa</p>
-                        <p class="card-text">Humidity: ${data.main.humidity}%</p>
-                        <p class="card-text">Wind Speed: ${data.wind.speed} meters/sec</p>
-                        <hr>
-                        
-                    </div>
-                  </div>
+        
+            <img class="card-img-top" src="holder.js/100x180/" alt="" />
+            <h2 class="card-title">${data.name}</h2>
+            <p class="card-text">
+              ${data.weather[0].main}: ${data.weather[0].description}
+            </p>
+            <h5>${d}</h5>
+            <div class="row">
+              <div class="col">
+                <br><h1 class="display-5">
+                  ${(data.main.temp - 273.15).toFixed(2)}°C
+                </h1>
+                <img
+                  src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
+                  id="productImg"
+                  class="img-responsive"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <div class="col">
+                <br>
+                Pressure: ${data.main.pressure} hPa
+                <br />Humidity: ${data.main.humidity}%
+                <br />Wind Speed: ${data.wind.speed} meters/sec
+              </div>
+              <hr />
+            </div>
+          
             `
     })
 
@@ -36,9 +50,7 @@ fetch(API_URL_Hrs)
         let h2 = new Date(hour[2].dt_txt).getHours();
         let h3 = new Date(hour[3].dt_txt).getHours();
         let h4 = new Date(hour[4].dt_txt).getHours();
-        
-        console.log(h1);
-     
+
         hours.innerHTML += `
         <table class="table table-hover">
             <thead>
