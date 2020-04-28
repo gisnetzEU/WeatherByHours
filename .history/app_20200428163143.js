@@ -38,19 +38,19 @@ fetch(API_URL)
             <br>15 hrs: ${(hour[0].main.temp - 273.15).toFixed(2)}°C
             </div>
             <div class="col2">
-            <img src="http://openweathermap.org/img/wn/${hour[1].weather[0].icon}@2x.png" alt="">
+            <img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
             <br>18 hrs: ${(hour[1].main.temp - 273.15).toFixed(2)}°C
             </div>
             <div class="col3">
-            <img src="http://openweathermap.org/img/wn/${hour[2].weather[0].icon}@2x.png" alt="">
+            <img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
             <br>21 hrs: ${(hour[2].main.temp - 273.15).toFixed(2)}°C
             </div>
             <div class="col4">
-            <img src="http://openweathermap.org/img/wn/${hour[3].weather[0].icon}@2x.png" alt="">
+            <img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
             <br>21 hrs: ${(hour[3].main.temp - 273.15).toFixed(2)}°C
             </div> 
             <div class="col3">
-            <img src="http://openweathermap.org/img/wn/${hour[4].weather[0].icon}@2x.png" alt="">
+            <img src="http://openweathermap.org/img/wn/${hour[0].weather[0].icon}@2x.png" alt="">
             <br>21 hrs: ${(hour[4].main.temp - 273.15).toFixed(2)}°C
             </div>     
             `      
