@@ -18,16 +18,17 @@ fetch(API_URL)
             <h5>${d}</h5>
             <div class="row">
               <div class="col">
-                <br><h1 class="display-5">
+                <br><h1 class="display-4">
                   ${(data.main.temp - 273.15).toFixed(2)}°C
-                </h1>
-                <img
-                  src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
-                  id="productImg"
-                  class="img-responsive"
-                  alt=""
-                  srcset=""
-                />
+                  
+                   <img
+                    src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"
+                    id="productImg"
+                    class="img-responsive"
+                    alt=""
+                    srcset=""
+                    />
+                    </h1>
               </div>
               <div class="col">
                 <br>
